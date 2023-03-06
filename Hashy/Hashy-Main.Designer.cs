@@ -1,6 +1,6 @@
 ﻿namespace Hashy
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.dirTextBox = new System.Windows.Forms.TextBox();
             this.scanButton = new System.Windows.Forms.Button();
             this.debugButton = new System.Windows.Forms.Button();
@@ -45,6 +45,7 @@
             this.reportTextBox = new System.Windows.Forms.TextBox();
             this.totalPercentageLabel = new System.Windows.Forms.Label();
             this.consoleRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.existingReportLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dirTextBox
@@ -196,11 +197,21 @@
             this.consoleRichTextBox.Text = "";
             this.consoleRichTextBox.TextChanged += new System.EventHandler(this.consoleRichTextBox_TextChanged);
             // 
-            // Form1
+            // existingReportLabel
+            // 
+            this.existingReportLabel.AutoSize = true;
+            this.existingReportLabel.Location = new System.Drawing.Point(491, 9);
+            this.existingReportLabel.Name = "existingReportLabel";
+            this.existingReportLabel.Size = new System.Drawing.Size(100, 16);
+            this.existingReportLabel.TabIndex = 17;
+            this.existingReportLabel.Text = "Existing Report:";
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 453);
+            this.Controls.Add(this.existingReportLabel);
             this.Controls.Add(this.consoleRichTextBox);
             this.Controls.Add(this.totalPercentageLabel);
             this.Controls.Add(this.reportTextBox);
@@ -218,8 +229,8 @@
             this.Controls.Add(this.scanButton);
             this.Controls.Add(this.dirTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "Hashy - A file hash checker - By Tom D\'Silva © 2022 - PRE-RELEASE ALPHA";
+            this.Name = "Main";
+            this.Text = "Hashy - A file hash checker - By Silvalined © 2022 - PRE-RELEASE ALPHA";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -244,6 +255,7 @@
         private System.Windows.Forms.TextBox reportTextBox;
         private System.Windows.Forms.Label totalPercentageLabel;
         private System.Windows.Forms.RichTextBox consoleRichTextBox;
+        private System.Windows.Forms.Label existingReportLabel;
     }
 }
 

@@ -62,6 +62,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecursiveFileProcessor.cs" />
+    <EmbeddedResource Include="Hashy-About.resx">
+      <DependentUpon>Hashy-About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hashy-Main.resx">
       <DependentUpon>Hashy-Main.cs</DependentUpon>
     </EmbeddedResource>
